@@ -1,0 +1,2 @@
+1- Fill the constitutuin file with the bare minimum requirements for a static web app based on the template.
+2- I am building a modern podcast website. I want it to look sleek, something that would standout. Should have a landing page with one featured episode. There should be an episodes pag. An about bpage and a FAQ page. Should have 20 episodes and the data is mock you dont need to pull anything from any real feed.
