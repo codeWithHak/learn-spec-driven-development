@@ -1,0 +1,114 @@
+# Dependencies
+node_modules/
+
+# Environment variables
+.env*
+!.env.example
+
+# Next.js
+.next/
+out/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+*.log
+
+# Next.js build output
+dist/
+
+# Production build
+build/
+
+# Database
+*.sqlite
+*.sqlite3
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# IDE
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.idea
+*.swp
+*.swo
+*~
+
+# Build outputs
+coverage/
+.nyc_output/
+coverage-final.json
+
+# Temporary files
+temp/
+tmp/
+
+# NPM
+npm-debug.log*
+node_modules/
+
+# Bower
+bower_components/
+
+# JSHint
+.jshintrc
+
+# CoffeeScript
+coffee/
+*.coffee.md
+
+# Coverage directory used by tools like istanbul
+coverage/
+
+# Unit test reports
+.junit.xml
+
+# Grunt
+.grunt
+
+# Bower
+bower_components/
+
+# Sass
+.sass-cache
+
+# Git
+*.orig
+
+# ESLint
+.eslintcache
+
+# TypeScript
+*.tsbuildinfo
+next-env.d.ts
+
+# Yarn
+yarn-error.log
+.yarn-integrity
+.pnp.*
+.pnp.js
+
+# Prettier
+.prettierignore
+
+# Local environment variables
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Next.js telemetry
+.next/telemetry-events.json
+
+# VS Code
+.vscode
