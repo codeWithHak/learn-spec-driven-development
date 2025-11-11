@@ -1,4 +1,4 @@
-# Learn Spec Driven Development Learning
+# Learn Spec Driven Development
 
 This repo documents my journey into spec-driven development, learning to write detailed specifications first and then letting AI agents handle the implementation.
 
