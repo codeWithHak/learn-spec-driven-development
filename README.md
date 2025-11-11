@@ -1,4 +1,4 @@
-# Spec-Driven Development Learning
+# Learn Spec Driven Development Learning
 
 This repo documents my journey into spec-driven development, learning to write detailed specifications first and then letting AI agents handle the implementation.
 
@@ -16,8 +16,8 @@ Major tools like AWS Kiro, GitHub's SpecKit, and JetBrains are shifting from pro
 
 ### Step 1: Master a CLI Agent
 - Learn Qwen Coder or Gemini CLI
+- Integrate MCP servers for extended tooling
 - Understand how agents interpret instructions
-- Practice effective prompting
 
 ### Step 2: Learn SpecKit Plus
 - Write clear, detailed specifications
@@ -31,6 +31,7 @@ Major tools like AWS Kiro, GitHub's SpecKit, and JetBrains are shifting from pro
 
 ## Tools
 - **CLI Agents:** Qwen Coder / Gemini CLI
+- **MCP Servers:** Extended tooling and integrations
 - **Specification:** SpecKit Plus
 - **Approach:** Specification first, implementation second
 
