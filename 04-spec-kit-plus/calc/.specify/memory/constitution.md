@@ -1,9 +1,8 @@
 <!--
 SYNC IMPACT REPORT
-Version change: N/A → 1.0.0 (Initial constitution implementation)
-Added principles: Test-First Development, Python Type Safety, Code Quality, Architectural Decision Records, OOP Standards, Technical Stack Requirements
-Added sections: Quality Requirements, Development Workflow
-Templates requiring updates: ✅ Updated all templates to align with new principles
+Version change: 1.0.0 → 1.0.1 (Code Quality Standards update)
+Modified principles: III. Code Quality and Readability (expanded with specific requirements)
+Templates requiring updates: ✅ Updated to align with enhanced code quality standards
 Follow-up TODOs: None
 -->
 # calc Constitution
@@ -17,7 +16,7 @@ TDD is mandatory: All tests must be written before implementation code; Tests mu
 Python 3.12+ with type hints everywhere in all code; Strict typing enforcement to prevent runtime errors; Type checking must pass before any code is merged.
 
 ### III. Code Quality and Readability
-All code must be clean, well-documented, and easy to read; Code reviews must assess readability; Complex implementations must be justified and documented.
+All functions must include type hints on parameters and return types (e.g., `def add(a: float, b: float) -> float:`); All functions must include docstrings explaining what they do (e.g., `"""Add two numbers and return the sum."""`); Follow PEP 8 naming conventions (lowercase_with_underscores for functions); Lines must be under 100 characters; No magic numbers; use named constants (e.g., bad: `if x > 10:`, good: `if x > MAX_POWER_EXPONENT:`).
 
 ### IV. Architectural Decision Records (ADRs)
 Important decisions MUST be documented using ADRs; All architectural changes require an ADR to explain reasoning; ADRs provide historical context for future maintainers.
@@ -30,7 +29,7 @@ Use Python 3.12+ with UV package manager; Use pytest for testing; All project fi
 
 ## Quality Requirements
 
-All tests must pass before merging; Maintain at least 80% code coverage; Use dataclasses for all data structures; Follow established coding standards and style guides; Ensure code is maintainable and well-documented.
+All tests must pass before merging; Maintain at least 80% code coverage; Use dataclasses for all data structures; Follow established coding standards and style guides; Ensure code is maintainable and well-documented; All code must comply with the specific code quality standards outlined in Principle III.
 
 ## Development Workflow
 
@@ -40,4 +39,4 @@ All features must start with a specification document before implementation; Cod
 
 This Constitution supersedes all other practices and guidelines in the project; All PRs and code reviews must verify compliance with these principles; Any deviation from these principles must be justified and documented; Amendments to this Constitution require explicit approval and must follow the Spec-Driven Development process.
 
-**Version**: 1.0.0 | **Ratified**: 2025-11-16 | **Last Amended**: 2025-11-16
+**Version**: 1.0.1 | **Ratified**: 2025-11-16 | **Last Amended**: 2025-11-16
