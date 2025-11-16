@@ -1,55 +1,43 @@
-# [PROJECT_NAME] Constitution
-<!-- Example: Spec Constitution, TaskFlow Constitution, etc. -->
+<!--
+SYNC IMPACT REPORT
+Version change: N/A → 1.0.0 (Initial constitution implementation)
+Added principles: Test-First Development, Python Type Safety, Code Quality, Architectural Decision Records, OOP Standards, Technical Stack Requirements
+Added sections: Quality Requirements, Development Workflow
+Templates requiring updates: ✅ Updated all templates to align with new principles
+Follow-up TODOs: None
+-->
+# calc Constitution
 
 ## Core Principles
 
-### [PRINCIPLE_1_NAME]
-<!-- Example: I. Library-First -->
-[PRINCIPLE_1_DESCRIPTION]
-<!-- Example: Every feature starts as a standalone library; Libraries must be self-contained, independently testable, documented; Clear purpose required - no organizational-only libraries -->
+### I. Test-First Development (NON-NEGOTIABLE)
+TDD is mandatory: All tests must be written before implementation code; Tests must initially fail before feature implementation; The Red-Green-Refactor cycle must be strictly enforced.
 
-### [PRINCIPLE_2_NAME]
-<!-- Example: II. CLI Interface -->
-[PRINCIPLE_2_DESCRIPTION]
-<!-- Example: Every library exposes functionality via CLI; Text in/out protocol: stdin/args → stdout, errors → stderr; Support JSON + human-readable formats -->
+### II. Python Type Safety
+Python 3.12+ with type hints everywhere in all code; Strict typing enforcement to prevent runtime errors; Type checking must pass before any code is merged.
 
-### [PRINCIPLE_3_NAME]
-<!-- Example: III. Test-First (NON-NEGOTIABLE) -->
-[PRINCIPLE_3_DESCRIPTION]
-<!-- Example: TDD mandatory: Tests written → User approved → Tests fail → Then implement; Red-Green-Refactor cycle strictly enforced -->
+### III. Code Quality and Readability
+All code must be clean, well-documented, and easy to read; Code reviews must assess readability; Complex implementations must be justified and documented.
 
-### [PRINCIPLE_4_NAME]
-<!-- Example: IV. Integration Testing -->
-[PRINCIPLE_4_DESCRIPTION]
-<!-- Example: Focus areas requiring integration tests: New library contract tests, Contract changes, Inter-service communication, Shared schemas -->
+### IV. Architectural Decision Records (ADRs)
+Important decisions MUST be documented using ADRs; All architectural changes require an ADR to explain reasoning; ADRs provide historical context for future maintainers.
 
-### [PRINCIPLE_5_NAME]
-<!-- Example: V. Observability, VI. Versioning & Breaking Changes, VII. Simplicity -->
-[PRINCIPLE_5_DESCRIPTION]
-<!-- Example: Text I/O ensures debuggability; Structured logging required; Or: MAJOR.MINOR.BUILD format; Or: Start simple, YAGNI principles -->
+### V. Object-Oriented Programming Standards
+Follow essential OOP principles: SOLID, DRY, KISS; Code structure must adhere to established OOP patterns; Violations of these principles must be justified.
 
-### [PRINCIPLE_6_NAME]
+### VI. Technical Stack Requirements
+Use Python 3.12+ with UV package manager; Use pytest for testing; All project files must be tracked in git; Leverage dataclasses for data structures.
 
+## Quality Requirements
 
-[PRINCIPLE__DESCRIPTION]
+All tests must pass before merging; Maintain at least 80% code coverage; Use dataclasses for all data structures; Follow established coding standards and style guides; Ensure code is maintainable and well-documented.
 
-## [SECTION_2_NAME]
-<!-- Example: Additional Constraints, Security Requirements, Performance Standards, etc. -->
+## Development Workflow
 
-[SECTION_2_CONTENT]
-<!-- Example: Technology stack requirements, compliance standards, deployment policies, etc. -->
-
-## [SECTION_3_NAME]
-<!-- Example: Development Workflow, Review Process, Quality Gates, etc. -->
-
-[SECTION_3_CONTENT]
-<!-- Example: Code review requirements, testing gates, deployment approval process, etc. -->
+All features must start with a specification document before implementation; Code reviews are mandatory for all changes; Follow Spec-Driven Development practices; Each feature development follows: spec → plan → tasks → implementation → test cycle; Changes must be independently testable and verifiable.
 
 ## Governance
-<!-- Example: Constitution supersedes all other practices; Amendments require documentation, approval, migration plan -->
 
-[GOVERNANCE_RULES]
-<!-- Example: All PRs/reviews must verify compliance; Complexity must be justified; Use [GUIDANCE_FILE] for runtime development guidance -->
+This Constitution supersedes all other practices and guidelines in the project; All PRs and code reviews must verify compliance with these principles; Any deviation from these principles must be justified and documented; Amendments to this Constitution require explicit approval and must follow the Spec-Driven Development process.
 
-**Version**: [CONSTITUTION_VERSION] | **Ratified**: [RATIFICATION_DATE] | **Last Amended**: [LAST_AMENDED_DATE]
-<!-- Example: Version: 2.1.1 | Ratified: 2025-06-13 | Last Amended: 2025-07-16 -->
+**Version**: 1.0.0 | **Ratified**: 2025-11-16 | **Last Amended**: 2025-11-16
